@@ -308,6 +308,9 @@ Each application can contain a file called `sc-pipelines.yml` with the following
 language_type: jvm
 build:
   main_module: foo/bar
+  project_modules:
+    - monoRepoA
+    - monoRepoB
 lowercaseEnvironmentName1:
     services:
         - type: service1Type
